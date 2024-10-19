@@ -30,7 +30,7 @@ const toggleApprove = () => {
 
     <!-- Admin -->
     <div
-        v-if="$page.props.auth.user.role === 'admin'"
+        v-if="$page.props.auth.user && $page.props.auth.user.role === 'admin'"
         class="bg-slate-800 text-white mb-6 p-6 rounded-md font-medium flex items-center justify-between"
     >
         <p>
